@@ -14,10 +14,13 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
-
+C
 --
 -- Table structure for table `tb_p2p_rf_cabang`
 --
+
+CREATE DATABASE IF NOT EXISTS `p2p` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `p2p`;
 
 DROP TABLE IF EXISTS `tb_p2p_rf_cabang`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
