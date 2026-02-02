@@ -33,6 +33,8 @@ services:
       TZ: 'Asia/Jakarta'
     command: ['--default-time-zone=+07:00','--mysql-native-password=ON']
     volumes:
+      - ./sql_init/laravel_20260202.sql:/docker-entrypoint-initdb.d/laravel_20260202.sql
+      - ./sql_init/p2p_20260202.sql:/docker-entrypoint-initdb.d/p2p_20260202.sql
       - datavolume-laravel-po:/var/lib/mysql
     networks:
       - laravel
